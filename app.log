@@ -1,0 +1,52 @@
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 690-205-496
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 690-205-496
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 690-205-496
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "process_scheduled_payments" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 690-205-496
+INFO:apscheduler.executors.default:Running job "process_scheduled_payments (trigger: interval[0:01:00], next run at: 2024-12-20 01:10:16 IST)" (scheduled at 2024-12-20 01:10:16.903072+05:30)
+INFO:apscheduler.executors.default:Job "process_scheduled_payments (trigger: interval[0:01:00], next run at: 2024-12-20 01:11:16 IST)" executed successfully
+INFO:apscheduler.executors.default:Running job "process_scheduled_payments (trigger: interval[0:01:00], next run at: 2024-12-20 01:10:17 IST)" (scheduled at 2024-12-20 01:10:17.364573+05:30)
+INFO:apscheduler.executors.default:Job "process_scheduled_payments (trigger: interval[0:01:00], next run at: 2024-12-20 01:11:17 IST)" executed successfully

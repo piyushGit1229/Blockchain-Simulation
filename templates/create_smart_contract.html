@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay by Smart Contract</title>
+    <style>
+        /* General Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: black;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            position: relative; /* Required for pseudo-element positioning */
+            background: #222831; /* Light grey background for the form */
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            width: 400px;
+            max-width: 100%;
+            z-index: 1; /* Ensures the form content stays above the pseudo-element */
+            color: white; /* Black text color to contrast with the light grey background */
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            text-align: center;
+            color:white; /* Black text color */
+            font-size: 1.6rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: white; /* Black text color */
+        }
+
+        input, select, button {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.6rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #000; /* Black text color */
+            background: white; /* Slightly darker grey for input fields */
+            box-sizing: border-box;
+        }
+
+        input::placeholder, select::placeholder {
+            color: wh; /* Grey placeholder text color */
+        }
+
+        input:focus, select:focus {
+            outline: 2px solid #4628ff;
+            background: white; /* Slightly darker grey when focused */
+        }
+
+        button {
+            background: linear-gradient(to right, #4628ff, #0072ff);
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.2s ease;
+            padding: 0.8rem;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #0072ff, #00c6ff);
+            transform: scale(1.05);
+        }
+
+        #schedule_section {
+            background: white; /* Light grey for the schedule section */
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #schedule_section.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        #execution_time {
+            background: #ddd; /* Slightly darker grey for input fields */
+            color: #000; /* Black text color */
+            border: none;
+            border-radius: 10px;
+            padding: 0.8rem;
+            box-sizing: border-box;
+        }
+
+        #execution_time:focus {
+            outline: 2px solid #4628ff;
+            background: white; /* Slightly darker grey when focused */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            form {
+                padding: 1rem;
+                width: 350px;
+            }
+
+            input, select, button {
+                font-size: 0.9rem;
+                padding: 0.7rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            form {
+                padding: 0.8rem;
+                width: 280px;
+            }
+
+            input, select, button {
+                font-size: 0.8rem;
+                padding: 0.6rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/create_smart_contract">
+        <h2>Create Smart Contract</h2>
+
+        <label for="contract_type">Contract Type:</label>
+        <select id="contract_type" name="contract_type" required>
+            <option value="" disabled selected>Select Contract Type</option>
+            <option value="pay_on_receive">Pay on Receiving Funds</option>
+            <option value="schedule_payment">Schedule Payment</option>
+        </select>
+
+        <label for="sender">Sender:</label>
+        <input type="text" id="sender" name="sender" placeholder="Enter sender address" required>
+
+        <label for="sender_private_key">Sender Private Key:</label>
+        <input type="text" id="sender_private_key" name="sender_private_key" placeholder="Enter sender private key" required>
+
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" name="recipient" placeholder="Enter recipient address" required>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" step="0.01" placeholder="Enter amount" required>
+
+        <div id="schedule_section">
+            <label for="execution_time">Execution Time:</label>
+            <input type="datetime-local" id="execution_time" name="execution_time">
+        </div>
+
+        <button type="submit">Create Smart Contract</button>
+    </form>
+
+    <script>
+        const contractType = document.getElementById('contract_type');
+        const scheduleSection = document.getElementById('schedule_section');
+
+        contractType.addEventListener('change', function() {
+            if (this.value === 'schedule_payment') {
+                scheduleSection.classList.add('visible');
+            } else {
+                scheduleSection.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

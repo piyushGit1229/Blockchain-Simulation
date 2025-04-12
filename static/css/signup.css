@@ -1,0 +1,81 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: black; 
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the sign-up form */
+.signup-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form title */
+.signup-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Input fields */
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Submit button */
+.signup-form button {
+    width: 108%;
+    margin-top:10px;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+    background: #0056b3;
+}
+
+/* Link */
+.signup-form p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-form p a {
+    color: #00acee;
+    text-decoration: none;
+}
+
+.signup-form p a:hover {
+    text-decoration: underline;
+}

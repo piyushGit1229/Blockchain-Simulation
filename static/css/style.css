@@ -1,0 +1,516 @@
+body{
+    background-color:black;
+    color: white;
+    
+}
+
+
+
+p1{
+    font-size:40px;
+    padding:10px;
+    margin-top: 10px;
+    margin-left:20px;
+    color:white;
+    font-weight: 550;
+    font-family: sans-serif;
+   
+}
+p2{
+    
+    font-size:70px;
+    padding:10px;
+    margin-top:30px;
+    margin-left:10px;
+    color: #4628ff;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.header{
+ margin-top: 40px;
+ margin-left: 50px;
+
+}
+/* Container for the button */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if you want */
+    height: 100vh; /* Full height of the viewport */
+}.btn {
+    display: inline-block;
+    padding: 20px 40px; /* Increased padding for a bigger button */
+    background-color: #4628ff;
+    color: #fff;
+    font-size: 20px; /* Slightly larger text */
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0; /* No rounded corners, making it rectangular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-left: 330px;
+    position: relative;
+    top: 750px;
+}
+
+
+.btn:hover {
+    background-color: #1777f5;
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: -250px;
+    left:710px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 40px; 
+
+}
+
+.navbar a {
+    padding: 0px 5px;  
+    margin: 0;          
+    color: white;      
+    text-decoration: none; 
+    font-weight: 700;   
+    text-transform: uppercase; 
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.vertical-line {
+    border-left: 2px solid white;  
+    height: 500px; 
+    margin-left: 280px;    
+    margin-top:-320px;         
+}
+
+
+.navbar a:hover {
+    color:rgb(35, 35, 217);  
+    text-decoration: none;  
+    transition: color 0.3s ease; 
+}
+
+.main{
+    display: flex;
+    padding: 10px;
+    font-family: sans-serif;
+    margin: 10px;
+
+}
+
+
+.intro {
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20%; 
+}
+
+.intro-text {
+    font-size:80px; 
+    color: white;  
+    font-family: "Display", sans-serif;
+    font-weight:bold;
+
+}
+
+.app-title {
+    font-size:30px; 
+    font-weight: bold;
+    color:rgb(59, 59, 236);  
+    margin-top: 10px; 
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container,.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px; /* Reduced top and bottom padding */
+    max-width: 1200px;
+    width: 100%;
+    font-size: 20px;
+    background-color: #1a1a1d;
+    margin-left: 240px;
+    margin-top: 50px; /* Reduced top margin */
+    margin-bottom: 50px; /* Optionally reduce bottom margin */
+}
+
+.text-section,.text-section2{
+    flex: 1;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.text-section h1,.text-section2 h1{
+    font-size: 70px;
+    font-weight: 900;
+    margin:30px;
+}
+
+.text-section p,.text-section2 p{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #b5b5b5;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+span{
+    color:rgb(59, 59, 236) ;
+}
+
+.texts{
+    font-size: 120px;
+    font-weight: 700px;
+    margin-left:100px;
+    font-family: sans-serif;
+    /* margin-top: 60px; */
+    margin-bottom: -100px;
+    
+}
+
+.forms {
+    background-color: #1a1a1d;
+    border-radius: 20px;
+    box-shadow: none;
+    margin: 0 auto;  
+    margin-top: -450px;  
+    padding: 40px 80px;  
+    max-width: 800px; 
+    width: 100%; 
+    margin-left: 600px;
+   
+    
+}
+
+
+#fname, #email {
+    width: 740px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;  /* No border */
+    background-color: rgb(60, 61, 63);  /* Dark background */
+    color: #fff;  /* White text */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#message {
+    width: 740px;
+    height: 400px;
+    border-radius: 10px;
+    border: none;  /* No border */
+    background-color: rgb(60, 61, 63);  
+    color: #fff;  /* White text */
+    padding: 10px;
+}
+
+button {
+    background-color: #007BFF;  /* Blue button background */
+    color: #fff;  /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+label{
+    font-size: 20px;
+}
+
+.Info{
+    font-size: 23px;
+    margin-left: 630px;
+    padding: 20px;
+
+}
+
+body, html {
+    overflow-x: hidden;  /* Disables horizontal scrolling */
+    margin: 0;  /* Removes any default margin that may cause horizontal overflow */
+    padding: 0;  /* Removes any default padding */
+}
+input::placeholder {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p1,p2{
+    margin-top:5px ;
+}
+
+/* Mobile Phones (screen width ≤ 480px) */
+@media (max-width: 480px) {
+    p1 {
+        font-size: 20px; /* Further reduced for small screens */
+        margin-left: 5px;
+    }
+
+    p2 {
+        font-size: 30px;
+        margin-left: 5px;
+    }
+
+
+    .header {
+        margin-left: 0; /* Remove extra space */
+        text-align: center;
+        margin-right: 40px;
+        padding-bottom: 50px;
+        margin-top: 1px;
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        top: 450px;
+        width: 40%;
+        margin-left: 100px;
+    }
+
+
+    .forms {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 2px;
+    }
+
+    #fname, #email, #message {
+              font-size: 14px;
+        height: 40px;
+    }
+
+    #message {
+        height: 150px;
+    }
+
+    .Info {
+        font-size: 14px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .intro-text {
+        font-size: 35px;
+        margin-top: -350px;
+        margin-right: 20px;
+    }
+
+    .app-title {
+        font-size: 20px; /* Smaller subtitle */
+        margin-left: 27px;
+    }
+    h1{
+        margin-top: -200px;
+    }
+
+    .texts {
+        font-size: 50px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center; /* Center align for smaller screens */
+    }
+
+    .text-section h1,
+    .text-section2 h1 {
+        font-size: 40px; /* Smaller heading sizes */
+        margin: 30px;
+    }
+
+    .text-section p,
+    .text-section2 p {
+        font-size: 15px; /* Smaller paragraph text */
+        margin: 10px;
+    }
+
+    .vertical-line {
+        display: none; /* Hide line completely */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically if needed */
+        align-items: flex-start; /* Align to the left */
+        margin-left: 10px; /* Shift the container to the left */
+        width: auto; /* Let it adjust naturally to fit */
+        margin-right: 10px;
+        margin-bottom: 150px;
+        margin-top: 90px;
+    }
+
+
+    .text-section, .text-section2 {
+        margin-left: 0; /* Align text sections to the left */
+        padding-left: 10px; /* Optional padding for better spacing */
+    }
+
+    .about{
+        flex-direction: column; /* Stack items vertically if needed */
+        align-items: flex-start; /* Align to the left */
+        margin-left: 10px; /* Shift the container to the left */
+        width: auto; /* Let it adjust naturally to fit */
+        margin-right: 10px;
+        padding-bottom: 80px;
+    }
+}
+
+/* Tablets (screen width ≤ 768px) */
+@media (max-width: 1400px) {
+    p1 {
+        font-size: 25px; /* Adjusted font size for readability on tablets */
+        margin-left: 5px;
+    }
+
+    p2 {
+        font-size: 35px; /* Adjusted font size */
+        margin-left: 5px;
+    }
+
+    .header {
+        margin-left: 20px; /* Align closer to the edge */
+        text-align: center;
+        margin-right: 20px;
+        padding-bottom: 30px; /* Reduced padding */
+        margin-top: 10px; /* Adjusted margin for better positioning */
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+        top: 370px; /* Adjusted to avoid excessive space */
+        width: 40%; /* Slightly increased button width */
+        margin-left: 90px;
+        margin-right: auto;
+    }
+
+    .forms {
+        margin-top: 20px;
+        padding: 15px;
+        font-size: 14px; /* Increased font size for better readability */
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    #fname, #email, #message {
+        font-size: 16px; /* Slightly larger font size */
+        height: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 95%;
+    }
+
+    #message {
+        height: 180px; /* Adjusted height for better space on tablets */
+    }
+
+    .Info {
+        font-size: 16px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .intro-text {
+        font-size: 30px; /* Adjusted font size */
+        margin-top: -140px;
+        margin-right: 20px;
+        margin-left: 10px;
+        padding-bottom: 100px;
+    }
+
+    .app-title {
+        font-size: 25px; /* Adjusted subtitle size */
+        margin-left: 20px;
+        visibility: hidden;
+    }
+
+    h1 {
+        margin-top: -150px; /* Adjusted for better positioning */
+    }
+
+    .texts {
+        font-size: 45px; /* Adjusted text size for better visibility */
+        margin-left: 0;
+        margin-bottom: 15px;
+        text-align: center; /* Center align for better layout */
+    }
+
+    .text-section h1,
+    .text-section2 h1 {
+        font-size: 30px; /* Adjusted heading size for tablets */
+        margin: 25px;
+    }
+
+    .text-section p,
+    .text-section2 p {
+        font-size: 16px; /* Slightly larger paragraph text */
+        margin: 15px;
+        margin-right: -50px;
+    }
+
+    .vertical-line {
+        display: none; /* Hide line completely */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+        margin-left: 10px; /* Added margin for better spacing */
+        width: auto; /* Adjust width naturally */
+        margin-right: 10px;
+        margin-bottom: 10px; /* Reduced bottom margin */
+        margin-top: 50px; /* Adjusted top margin */
+        height: 110%;
+    }
+
+    .text-section, .text-section2 {
+        margin-left: 0; /* Align text sections to the left */
+        padding:30px; /* Added padding for better spacing */
+    }
+
+    .about {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+        margin-left: 10px; /* Added margin for alignment */
+        width: auto; /* Adjust naturally to fit */
+        margin-right: 10px;
+        padding-bottom: 60px; /* Adjusted padding for better spacing */
+    }
+}
