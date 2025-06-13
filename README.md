@@ -41,7 +41,8 @@ This simulation is ideal for developers, students, and blockchain enthusiasts lo
 
 ### ▶️ Demo Video: See It In Motion
 
-https://github.com/user-attachments/assets/dfd89c2a-5ba7-430e-bb30-2eee1b486b1a
+https://github.com/user-attachments/assets/191eb00c-69e0-45f7-a244-c16ca6b42287
+
 ---
 
 ## 🛠️ Installation Guide
