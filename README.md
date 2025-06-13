@@ -41,9 +41,7 @@ This simulation is ideal for developers, students, and blockchain enthusiasts lo
 
 ### ▶️ Demo Video: See It In Motion
 
-*Watch a walkthrough of the blockchain simulator:*
-[![Watch Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)
-
+https://github.com/user-attachments/assets/c45d1bc6-d1b5-4a13-86ee-9ce9ef99c0f0
 ---
 
 ## 🛠️ Installation Guide
