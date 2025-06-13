@@ -22,7 +22,10 @@
   ###  📸 What We Have Coded 
 
   ![Image](https://github.com/user-attachments/assets/6283e8f7-8e3d-41e3-ab4f-2ebda4b777c9)
-  ![Image](https://github.com/user-attachments/assets/0c78fb63-3136-4d39-80aa-ce163f2fff49)
+  
+  ![![Image](https://github.com/user-attachments/assets/74c2723c-3336-4855-85df-97c271425f7a)
+
+  ![Image](https://github.com/user-attachments/assets/ed22fda1-8297-4cb6-ad86-05ab0ff83ff1)
 
   ### ▶️ Expected Result - Demo Video Walkthrough
 
