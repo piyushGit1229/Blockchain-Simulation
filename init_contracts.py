@@ -1,19 +1,25 @@
 import sqlite3
 
-
-def init_contracts_db():
+def init_contracts():
     conn = sqlite3.connect("contracts.db")
     cursor = conn.cursor()
 
-    # Create the smart_contracts table if it doesn't exist
+    # Create contracts table
     cursor.execute("""
-    CREATE TABLE IF NOT EXISTS smart_contracts (
+    CREATE TABLE IF NOT EXISTS contracts (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        contract_data TEXT NOT NULL,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        status TEXT DEFAULT 'active'  -- Can be 'active' or 'inactive'
+        sender TEXT,
+        recipient TEXT,
+        amount REAL,
+        execution_time TEXT,
+        is_processed INTEGER DEFAULT 0,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
     """)
 
     conn.commit()
     conn.close()
+    print("contracts.db initialized successfully.")
+
+if __name__ == "__main__":
+    init_contracts()
